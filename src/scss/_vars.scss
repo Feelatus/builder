@@ -1,0 +1,15 @@
+:root {
+	// base
+	--font-family: "Rubic", sans-serif;
+	--content-width: 1170px;
+	--container-offset: 15px;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+	// colors
+	--primary: #FFED00;
+	--b: #333333;
+	--w: #FEFEFE;
+	--g: #C4C4C4;
+	--background: var(--b);
+	--background-hr: #3F3F3F;
+}

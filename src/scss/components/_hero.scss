@@ -1,0 +1,18 @@
+.hero {
+	height: var(--vh);
+	position: relative;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__bg {
+		width: 300px;
+		height: 300px;
+		object-fit: contain;
+	}
+	h1 {
+		color: var(--b);
+	}
+}

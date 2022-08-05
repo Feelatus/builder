@@ -1,0 +1,68 @@
+@include font-face("Rubik", "../fonts/Rubik-Light", 300, normal);
+@include font-face("Comfortaa", "../fonts/Comfortaa-SemiBold", 600, normal);
+@include font-face("Comfortaa", "../fonts/Comfortaa-Bold", 700, normal);
+@include font-face("Audiowide", "../fonts/Audiowide-Regular", 400, normal);
+
+
+h1 {
+	color: var(--w);
+	@include font (96, h);
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	font-weight: 400;
+	font-family: "Audiowide", sans-serif;
+}
+
+h2 {
+	margin: 0;
+	color: var(--w);
+	@include font(48, h);
+	font-family: "Rubik", sans-serif;
+	font-style: 300;
+	line-height: 57px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+h3 {
+	color: var(--w);
+	@include font (36, h);
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	font-weight: 300;
+	font-family: "Rubik", sans-serif;
+}
+
+h4 {
+	color: var(--w);
+	@include font (24, h);
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	font-weight: 400;
+	font-family: "Rubik", sans-serif;
+}
+
+a {
+	color: var(--w);
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	font-family: "Comfortaa", sans-serif;
+}
+
+p {
+	margin: 0;
+	color: var(--w);
+	@include font (18, p);
+	font-weight: 300;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+}
+
+span {
+	color: var(--primary);
+}

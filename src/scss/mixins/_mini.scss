@@ -1,0 +1,50 @@
+/* stylelint-disable */
+
+@mixin d-none($bp) {
+	@if map-has-key($grid-breakpoints, $bp) {
+		@media (max-width: map-get($grid-breakpoints, $bp)) {
+			display: none;
+		}
+	}
+
+	@else {
+		@media (max-width: ($bp + 'px')) {
+			display: none;
+		}
+	}
+}
+
+$browser-context: 16;
+
+@function rem($pixels, $context: $browser-context) {
+	@return calc($pixels / $context )+rem;
+}
+
+
+@mixin font($px, $bp) {
+	@if $bp ==h {
+
+		@include min (xs) {
+			font-size: calc($px * 0.5) + px;
+		}
+
+		@include min (lg) {
+			font-size: calc($px * 0.85) + px;
+		}
+
+		@include min (xl) {
+			font-size: $px + px;
+		}
+	}
+
+	@else if $bp ==p {
+
+		@include min (xs) {
+			font-size: calc($px * 0.9) + px;
+		}
+
+		@include min (lg) {
+			font-size: $px + px;
+		}
+	}
+}
