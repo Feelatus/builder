@@ -1,0 +1,110 @@
+{
+	"svguse": {
+		"scope": "html",
+		"prefix": "g-use",
+		"body": [
+			"<svg class=\"\">",
+			"  <use xlink:href=\"img/sprite.svg#$2\"></use>",
+			"</svg>"
+		],
+		"description": "Snippet for use svg sprites"
+	},
+	"burger": {
+		"scope": "html",
+		"prefix": "g-burger",
+		"body": [
+			"<button class=\"burger\" aria-label=\"open\" aria-expanded=\"false\"  data-burger>",
+			"  <span class=\"burger__line\"></span>",
+			"</button>"
+		],
+		"description": "Snippet for burger btn"
+	},
+	"checkbox": {
+		"scope": "html",
+		"prefix": "g-checkbox",
+		"body": [
+			"<label class=\"custom-checkbox\">",
+			"  <input type=\"checkbox\" class=\"custom-checkbox__field\">",
+			"  <span class=\"custom-checkbox__content\">$1</span>",
+			"</label>"
+		],
+		"description": "Snippet for custom checkbox"
+	},
+	"navigation": {
+		"scope": "html",
+		"prefix": "g-nav",
+		"body": [
+			"<nav class=\"nav\" title=\"$1\">",
+			"  <ul class=\"nav__list\">",
+			"    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\"></a></li>",
+			"    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\"></a></li>",
+			"    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\"></a></li>",
+			"  </ul>",
+			"</nav>"
+		],
+		"description": "Snippet for navigation"
+	},
+	"social": {
+		"scope": "html",
+		"prefix": "g-social",
+		"body": [
+			"<ul class=\"social\" title=\"$1\">",
+			"  <li class=\"social__item\"><a href=\"#\" target=\"_blank\" class=\"social__link social__link--fb\" aria-label=\"Facebook\"></a></li>",
+			"  <li class=\"social__item\"><a href=\"#\" target=\"_blank\" class=\"social__link social__link--vk\" aria-label=\"Instagram\"></a></li>",
+			"  <li class=\"social__item\"><a href=\"#\" target=\"_blank\" class=\"social__link social__link--tw\" aria-label=\"Twitter\"></a></li>",
+			"</ul>"
+		],
+		"description": "Snippet for social links"
+	},
+	"basicswiper": {
+		"prefix": "g-swiper",
+		"body": [
+			"<div class=\"swiper $1\">",
+			"  <div class=\"swiper-wrapper\">",
+			"     <div class=\"swiper-slide\">",
+			"     </div>",
+			"  </div>",
+			"</div>"
+		],
+		"description": "Snippet for basic swiper structure"
+	},
+	"graph modal Btn": {
+		"prefix": "g-graph-btn",
+		"body": [
+			"<button class=\"btn-reset $1\" data-graph-path=\"$2\">$3</button>"
+		],
+		"description": "Snippet for graph-modal btn"
+	},
+	"picture": {
+		"prefix": "g-picture",
+		"body": [
+			"<picture>",
+			"  <source srcset=\"$1.avif\" type=\"image/avif\">",
+			"  <source srcset=\"$1.webp\" type=\"image/webp\">",
+			"  <img loading=\"lazy\" src=\"$1.$2\" class=\"image\" width=\"$4\" height=\"$5\" alt=\"$3\">",
+			"</picture>"
+		],
+		"description": "Snippet for basic logo structure"
+	},
+	"svgimg": {
+		"scope": "html",
+		"prefix": "g-svgimg",
+		"body": [
+			"<img loading=\"lazy\" src=\"$1.$2\" class=\"image\" width=\"$4\" height=\"$5\" alt=\"$3\">"
+		],
+		"description": "Snippet for simple html svg images"
+	},
+	"tooltip": {
+		"prefix": "g-tooltip",
+		"body": [
+			"<span class=\"tooltip\">",
+			"  <button class=\"tooltip__btn\" aria-describedby=\"$1\">$2</button>",
+			"  <span class=\"tooltip__txt\" role=\"tooltip\" id=\"$1\">",
+			"    <span class=\"visually-hidden\">Tooltip: </span>",
+			"    $3",
+			"  </span>",
+			"</span>"
+		],
+		"description": "Snippet for tooltip"
+	}
+}
